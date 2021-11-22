@@ -9,10 +9,8 @@ public class VerificaPalindrome {
 		System.out.print("Inserisci una parola: ");
 		String parola = scanner.nextLine();
 		String parolaInversa = "";
-		System.out.println("Hai digitato: " + parola + ".");
-		
 		char ch;
-
+		System.out.println("Hai digitato: " + parola + ".");
 		for (int i = 0; i < parola.length(); i++) {
 			ch = parola.charAt(i);
 			parolaInversa = ch + parolaInversa;
@@ -23,7 +21,6 @@ public class VerificaPalindrome {
 		} else {
 			System.out.println("Non è un palindromo.");
 		}
-
 		scanner.close();
 	}
 
