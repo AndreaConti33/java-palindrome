@@ -10,6 +10,7 @@ public class VerificaPalindrome {
 		String parola = scanner.nextLine();
 		String parolaInversa = "";
 		char ch;
+		int length = parola.length();
 		System.out.println("Hai digitato: " + parola + ".");
 		for (int i = 0; i < parola.length(); i++) {
 			ch = parola.charAt(i);
@@ -22,6 +23,8 @@ public class VerificaPalindrome {
 			System.out.println("Non è un palindromo.");
 		}
 		scanner.close();
+		
+		System.out.println("La parola è lunga: " + length + " caratteri.");
 	}
 
 }
