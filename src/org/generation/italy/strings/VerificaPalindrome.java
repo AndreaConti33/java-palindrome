@@ -11,21 +11,21 @@ public class VerificaPalindrome {
 		System.out.println("Hai digitato: " + parola);
 		String nparola = "";
 		char ch;
-		
+
 		for (int i = 0; i < parola.length(); i++) {
 			ch = parola.charAt(i);
 			nparola = ch + nparola;
 		}
-		
-		if(parola.equals(nparola)) {
+
+		if (parola.equals(nparola)) {
 			System.out.println("E' palindromo");
 		} else {
 			System.out.println("Non è palindromo");
 		}
-		
+
 		System.out.println(nparola);
-			
+
 		scanner.close();
-		}
+	}
 
 }
